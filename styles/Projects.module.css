@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&display=swap');
+
+
+.description{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.title{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.box:hover{
+    border-color: #c2b199;
+}
+
+.box{
+    transition: .5s;
+}
+

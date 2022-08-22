@@ -4,7 +4,8 @@
 .line{
     border-left: 4px solid #88806b;
     min-height: min-content;
-    height: 135px;
+    height: fit-content;
+    padding-bottom: 16px;
     border-radius: 1.7px;
 }
 
@@ -24,6 +25,7 @@
     font-weight: 600;
     transition: .3s;
     min-width: 93px;
+    font-size: 12.9px;
 }
 
 .date:hover{

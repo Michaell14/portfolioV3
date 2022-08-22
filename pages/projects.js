@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container, Text, Flex, Image, HStack } from '@chakra-ui/react';
-import Link from "next/link"
+import Head from "next/head"
 import { motion } from 'framer-motion';
 import styles from "../styles/Projects.module.css"
 import $ from "jquery"
@@ -25,6 +25,10 @@ function Projects() {
 
     return (
         <>
+            <Head>
+                <title>Projects - Michael Li</title>
+            </Head>
+
             <Container maxW={"2xl"} mt={"7vh"} mb={"1.5vh"}>
                 <Text className={"subjectTitle"} color={"#88806b"} fontSize={"3xl"}>#Projects</Text>
             </Container>

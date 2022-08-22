@@ -1,10 +1,15 @@
 import React from 'react'
 import { Box, Container, Text, Flex, Image, HStack, VStack } from '@chakra-ui/react';
-import styles from "../styles/Experience.module.css"
+import styles from "../styles/Experience.module.css";
+import Head from "next/head"
 
 function Experience() {
     return (
         <>
+            <Head>
+                <title>Experience - Michael Li</title>
+            </Head>
+
             <Container maxW={"2xl"} mt={"7vh"} mb={"1.5vh"}>
                 <Text className={"subjectTitle"} color={"#88806b"} fontSize={"3xl"}>#Experience</Text>
             </Container>

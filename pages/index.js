@@ -40,6 +40,7 @@ export default function Home() {
     <>
         <Head>
           <title>Michael Li</title>
+          <link rel="icon" href="/favicon.ico"></link>
         </Head>
         
         <Container className="container" maxW={"2xl"} mt={"10vh"}>

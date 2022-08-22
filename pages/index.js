@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Box, Container, Text, Button, Input, HStack, FormLabel, Icon, IconButton, useDisclosure } from '@chakra-ui/react';
+import { Box, Container, Text, Input, HStack, FormLabel, Icon, IconButton, useDisclosure } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import {
@@ -12,7 +12,6 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from '@chakra-ui/react'
-import $ from "jquery";
 import emailjs from '@emailjs/browser';
 import {GrSend} from "react-icons/gr";
 import {AiOutlineInstagram, AiFillGithub, AiOutlineMail} from "react-icons/ai";
@@ -83,7 +82,7 @@ export default function Home() {
               duration={.3}
               style={{color:"#88806b"}}
             >
-              <Text fontSize={"5xl"} className="title">
+              <Text fontSize={"5xl"} className="title" id="nameTitle">
                 Hey, I&#39;m Michael Li
               </Text>
             </motion.div>

@@ -1,10 +1,27 @@
-import React from 'react'
-import { Box, Container, Text, Flex, Image, HStack, VStack } from '@chakra-ui/react';
+import React, { useEffect} from 'react'
+import { Box, Container, Text, Flex, Image, HStack, VStack, calc } from '@chakra-ui/react';
 import styles from "../styles/Experience.module.css";
 import Head from "next/head";
 import { motion } from 'framer-motion';
+import anime from 'animejs';
 
 function Experience() {
+
+    useEffect(() => {
+        if (typeof window !== "undefined"){
+            for (let i=1; i<=4; i++){
+                anime({
+                    targets: `#experience${i}`,
+                    translateY: -15,
+                    duration: 1100,
+                    delay: 63 * (i-1),
+                    easing: 'easeOutExpo'
+                  })
+            }
+        }
+    }, [])
+
+    
     return (
         <>
             <Head>
@@ -21,8 +38,8 @@ function Experience() {
                 </motion.div>
             </Container>
 
-            <Container maxW={"2xl"} pb={20}>
-                <Flex gap={5}>
+            <Container maxW={"2xl"} pb={20} mt={"30px"}>
+                <Flex gap={5} id={"experience1"}>
                     <Text className={styles.date} fontSize={"sm"}>July 2022 - <br/>Aug. 2022</Text>
 
                         
@@ -36,12 +53,9 @@ function Experience() {
                             </Text>
                         </Box>
                     </Box>
-                    
-                    
-                    
                 </Flex>
 
-                <Flex gap={5} mt={"60px"}>
+                <Flex gap={5} mt={"60px"} id={"experience2"}>
                     <Text className={styles.date} fontSize={"sm"}>June 2022 - <br/>Present</Text>
 
                     <Box className={styles.line} position={"relative"}>
@@ -56,7 +70,7 @@ function Experience() {
                     
                 </Flex>
 
-                <Flex gap={5} mt={"60px"}>
+                <Flex gap={5} mt={"60px"} id={"experience3"}>
                     <Text className={styles.date} fontSize={"sm"}>Aug. 2021 - <br/>Present</Text>
 
                     <Box className={styles.line} position={"relative"}>
@@ -73,7 +87,7 @@ function Experience() {
                     
                 </Flex>
 
-                <Flex gap={5} mt={"60px"}>
+                <Flex gap={5} mt={"60px"} id={"experience4"}>
                     <Text className={styles.date}>Sept. 2021 - <br/>Present</Text>
 
                     <Box className={styles.line} position={"relative"}>
@@ -93,5 +107,6 @@ function Experience() {
         </>
     )
 }
+
 
 export default Experience;

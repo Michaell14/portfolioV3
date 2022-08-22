@@ -51,7 +51,7 @@ export default function Home() {
               style={{color:"#88806b"}}
             >
               <Text fontSize={"5xl"} className="title">
-                Hey, I'm Michael Li
+                Hey, I&#39;m Michael Li
               </Text>
             </motion.div>
             

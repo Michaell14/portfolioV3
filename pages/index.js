@@ -56,7 +56,7 @@ export default function Home() {
             </motion.div>
             
 
-            <Text fontSize={"xl"} className={styles.description} mt={2}>I'm a high school student from Maryland who loves to code and listen to music. I currently have a focus on <span style={{color: "#c2b199"}}>web development</span>, <span style={{color: "#c2b199"}}>artifical intelligence</span>, and <span style={{color: "#c2b199"}}>competitive programming.</span></Text>
+            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a high school student from Maryland who loves to code and listen to music. I currently have a focus on <span style={{color: "#c2b199"}}>web development</span>, <span style={{color: "#c2b199"}}>artifical intelligence</span>, and <span style={{color: "#c2b199"}}>competitive programming.</span></Text>
             
             
             <Popover placement={"right"}>

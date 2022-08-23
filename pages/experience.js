@@ -12,9 +12,9 @@ function Experience() {
             for (let i=1; i<=4; i++){
                 anime({
                     targets: `#experience${i}`,
-                    translateY: -15,
-                    duration: 1100,
-                    delay: 63 * (i-1),
+                    translateY: -10,
+                    duration: 800,
+                    delay: 65 * (i-1),
                     easing: 'easeOutExpo'
                   })
             }
@@ -38,7 +38,7 @@ function Experience() {
                 </motion.div>
             </Container>
 
-            <Container maxW={"2xl"} pb={20} mt={"30px"}>
+            <Container maxW={"2xl"} pb={20} mt={"20px"}>
                 <Flex gap={5} id={"experience1"}>
                     <Text className={styles.date} fontSize={"sm"}>July 2022 - <br/>Aug. 2022</Text>
 

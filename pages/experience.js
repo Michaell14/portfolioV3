@@ -15,7 +15,7 @@ function Experience() {
                     translateY: -10,
                     duration: 800,
                     delay: 65 * (i-1),
-                    easing: 'easeOutExpo'
+                    easing: 'easeOutSine'
                   })
             }
         }

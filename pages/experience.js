@@ -7,21 +7,6 @@ import anime from 'animejs';
 
 function Experience() {
 
-    useEffect(() => {
-        if (typeof window !== "undefined"){
-            for (let i=1; i<=4; i++){
-                anime({
-                    targets: `#experience${i}`,
-                    translateY: -10,
-                    duration: 800,
-                    delay: 65 * (i-1),
-                    easing: 'easeOutCubic'
-                  })
-            }
-        }
-    }, [])
-
-    
     return (
         <>
             <Head>
@@ -38,7 +23,7 @@ function Experience() {
                 </motion.div>
             </Container>
 
-            <Container maxW={"2xl"} pb={20} mt={"20px"}>
+            <Container maxW={"2xl"} pb={20}>
                 <Flex gap={5} id={"experience1"}>
                     <Text className={styles.date} fontSize={"sm"}>July 2022 - <br/>Aug. 2022</Text>
 

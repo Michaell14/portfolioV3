@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { ChakraProvider, extendTheme  } from '@chakra-ui/react'
 import Navbar from '../components/navbar';
+import { Analytics } from '@vercel/analytics/react';
 
 const theme = extendTheme({
   styles: {
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Navbar/>
       <Component {...pageProps} />
+      <Analytics />
     </ChakraProvider>
   )
 }

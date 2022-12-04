@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Text, Flex, Image, HStack } from '@chakra-ui/react';
+import { Box, Container, Text, Flex, } from '@chakra-ui/react';
 import Head from "next/head"
 import { motion } from 'framer-motion';
 import styles from "../styles/Projects.module.css"

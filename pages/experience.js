@@ -1,9 +1,8 @@
-import React, { useEffect} from 'react'
-import { Box, Container, Text, Flex, Image, HStack, VStack, calc } from '@chakra-ui/react';
+import React from 'react'
+import { Box, Container, Text, Flex } from '@chakra-ui/react';
 import styles from "../styles/Experience.module.css";
 import Head from "next/head";
 import { motion } from 'framer-motion';
-import anime from 'animejs';
 
 function Experience() {
 
@@ -79,7 +78,7 @@ function Experience() {
                         <Text className={styles.number} fontSize={"4xl"} position={"absolute"} bottom={"-8px"} left={-8}>4</Text>
                     
                         <Box ml={5}>
-                            <Text className={styles.title}><span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://event.codeday.org/dc" rel={"noreferrer"} target={"_blank"}>CodeDay</a></span> - Regional Manager</Text>
+                            <Text className={styles.title}><span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://event.codeday.org/dc" rel={"noreferrer"} target={"_blank"}>CodeDay DC</a></span> - Regional Manager</Text>
                             <Text className={styles.description} mt={1.5}>Organized coding hackathon for students around the DC area. 
                             Supervise teams in looking for sponsorships/venues.</Text>
                         </Box>

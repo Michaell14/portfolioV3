@@ -6,7 +6,6 @@ import React, { useRef } from "react";
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -20,7 +19,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   const form = useRef();
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   function sendEmail(e){
     e.preventDefault();
@@ -88,20 +87,18 @@ export default function Home() {
             </motion.div>
             
 
-            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a high school student from Maryland who loves to code and listen to music. I currently have a focus on <span style={{color: "#c2b199"}}>web development</span>, <span style={{color: "#c2b199"}}>artifical intelligence</span>, and <span style={{color: "#c2b199"}}>competitive programming.</span></Text>
+            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <span style={{color: "#c2b199"}}>full stack web development</span> and <span style={{color: "#c2b199"}}>artifical intelligence</span>.</Text>
             
               <Text fontSize={"xl"} className={styles.description} mt={4}>
-                I like {' '}
+                I appreciate good manga/anime{' ('}
                 
-                <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>manga/anime</span>
+                <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>give me a rec!</span>
           
-                
-                {' '}(give me a rec!) and doing other stuff with my friends. 
-                Some <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span> artists I currently have on repeat are: Kid Cudi, Kanye, J. Cole
+                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <span style={{color: "#c2b199"}}>Gracie Abrams, Kid Cudi, and A$AP Mob.</span>
               </Text>
 
             <Text fontSize={"xl"} className={styles.description} mt={4}>
-              Now, I have the opportunity to share my love for tech through organizations like CodeDay, Kids For Code, and many more. </Text>
+              Now, I have the opportunity to share my love for tech through my projects and organizations like CodeDay and Kids For Code!</Text>
           </Box>
           
           <Box className={styles.description} mt={5} mb={10}>
@@ -110,8 +107,6 @@ export default function Home() {
             <a href="mailto:limichael909@gmail.com"><Icon as={AiOutlineMail} boxSize={7}/></a>
             <a href="https://github.com/Michaell14/portfolioV3" target="_blank" rel="noreferrer"><Icon as={BiCode} boxSize={7} ml={3}/></a>
           </Box>
-
-
         </Container>
     </>
   )

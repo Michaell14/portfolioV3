@@ -1,10 +1,9 @@
 import React from 'react';
-import { Box, Container, Text, Flex, Image, HStack } from '@chakra-ui/react';
+import { Box, Container, Text, Image, HStack } from '@chakra-ui/react';
 import Link from "next/link";
 import {useRouter } from "next/router" 
 import styles from "./Navbar.module.css";
 import { motion } from "framer-motion"
-import Router from 'next/dist/server/router';
 
 const navigation=[
     {name: "Experience", href: "/experience"},

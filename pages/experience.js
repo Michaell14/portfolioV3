@@ -33,7 +33,7 @@ function Experience() {
                         <Box ml={5}>
                             <Text className={styles.title}>Verizon - SWE Intern</Text>
                             <Text className={styles.description} fontSize={"15px"} mt={1.5}> 
-                            Worked with a great team while leraning how to interface with APIs and navigate the internals of a software development team. 
+                            Worked with a great team while learning how to interface with APIs and navigate the internals of a software development team. 
                             </Text>
                         </Box>
                     </Box>

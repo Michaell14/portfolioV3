@@ -12,17 +12,17 @@ function Experience() {
                 <title>Experience - Michael Li</title>
             </Head>
 
-            <Container maxW={"2xl"} mt={"7vh"} mb={"1.5vh"}>
+            <Container maxW={"3xl"} mt={"7vh"} mb={"1.5vh"}>
                 <motion.div
                     whileHover={{color:"#c2b199"}}
                     duration={.3}
                     style={{color:"#88806b"}}
                     >
-                    <Text className={"subjectTitle"} fontSize={"3xl"}>#Experience</Text>
+                    <Text className={"subjectTitle"} fontSize={"4xl"}>#Experience</Text>
                 </motion.div>
             </Container>
 
-            <Container maxW={"2xl"} pb={20}>
+            <Container maxW={"3xl"} pb={20}>
                 <Flex gap={5} id={"experience1"}>
                     <Text className={styles.date} fontSize={"sm"}>July 2022 - <br/>Sept. 2022</Text>
 

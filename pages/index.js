@@ -73,7 +73,7 @@ export default function Home() {
           </DrawerContent>
         </Drawer>
         
-        <Container className="container" maxW={"2xl"} mt={"10vh"}>
+        <Container className="container" maxW={"3xl"} mt={"10vh"}>
 
           <Box>
             <motion.div
@@ -94,7 +94,7 @@ export default function Home() {
                 
                 <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>give me a rec!</span>
           
-                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <span style={{color: "#c2b199"}}>Gracie Abrams, Kid Cudi, and A$AP Mob.</span>
+                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <span style={{color: "#c2b199"}}>Daniel Caesar, Rocco, and Jeremy Zucker.</span>
               </Text>
 
             <Text fontSize={"xl"} className={styles.description} mt={4}>

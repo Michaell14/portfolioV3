@@ -2,13 +2,13 @@ import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 import styles from "/styles/Projects.module.css";
 
-export default function ImageBox({src, desc = ""}) {
+export default function ImageBox({src, desc = "", height = "390px"}) {
     return (
         <>
             <Box
                 sx={{
                     width: "100%",
-                    height: "390px",
+                    height: height,
                     cover: "fill",
                     marginTop: "2.5rem",
                     borderRadius: 5,

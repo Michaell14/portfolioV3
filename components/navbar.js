@@ -15,13 +15,13 @@ function Navbar() {
 
     return (
         <>
-            <Container maxW={"2xl"} my={8}>
+            <Container maxW={"3xl"} my={8}>
                 <HStack justify={"space-between"}>
                     <motion.div
                         whileHover={{scale: 1.1}}>
                         
                         <Link passHref href="/">
-                            <Image src="/me.jpg" width={"100px"} objectFit={"cover"} height={"95px"} borderRadius={"full"} borderWidth={"2px"} borderColor={"green"} _hover={{cursor: "pointer"}} alt="Picture of Michael"/>
+                            <Image src="/me.jpg" width={"100px"} objectFit={"cover"} height={"96px"} borderRadius={"full"} borderWidth={"2px"} borderColor={"green"} _hover={{cursor: "pointer"}} alt="Picture of Michael"/>
                         </Link>
                     </motion.div>
                     

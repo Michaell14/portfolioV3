@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function getProjectsData() {
     return (
         {
@@ -16,8 +14,13 @@ export default function getProjectsData() {
                     "image": "/bitcamp/green_test_playing.jpg",
                     "link": "/projects/bitcamp",
                     "githubLink": "https://github.com/Michaell14/Arduino-Controller-for-Hotdog-Unity-Game"
-                },
-                {
+                },{
+                    "name": "Spotify Music Box",
+                    "description": "A Music box developed with the Spotify API",
+                    "image": "/musicbox/michael_soldering.jpg",
+                    "link": "/projects/musicbox",
+                    "githubLink": ""
+                },{
                     "name": "Superlatives", 
                     "description": "An online game to play with friends where you vote for the friend who best fits the description of the listed question.",
                     "image": "/Superlatives.png", 

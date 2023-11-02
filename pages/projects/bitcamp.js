@@ -59,8 +59,17 @@ export default function bitcamp() {
                 Although we have completed the production of this project, I have learned how to combine game development with 3D design, which is a combination that I will continue to use in future projects.
                 </Text>
 
+                <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Additional Photos</Text>
+
                 <ImageBox src={"/bitcamp/nick_painting.jpg"} 
                     desc={"Nick painting nature on the collaborative painting board at Bitcamp 2023!"}/>
+
+                <ImageBox src={"/bitcamp/red_test_playing.jpg"}
+                    desc={"Player loses when the hotdog does not align with the mouth"}/>
+
+                <ImageBox src={"/bitcamp/participants.jpg"}
+                    desc={"High view of all the participants at Bitcamp 2023"}/>
+
                 <br/>
                 <br/>
                 <br/>

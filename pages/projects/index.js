@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Container, Text, Flex, } from '@chakra-ui/react';
 import Head from "next/head"
 import { motion } from 'framer-motion';
 import styles from "../../styles/Projects.module.css";
-import { projects } from "../../public/projectsData.json";
 import {BiCode} from "react-icons/bi";
+import getProjectsData from '../../public/getProjectsData';
 
 function Projects() {
 
@@ -12,6 +12,8 @@ function Projects() {
     const openLink = (link) => {
         window.open(link, "_newtab")
     }
+
+    const [projects, setProjetsData] = useState(getProjectsData()["projects"]);
 
     return (
         <>
@@ -32,7 +34,6 @@ function Projects() {
             
             <Container maxW={"3xl"} centerContent>
                 
-
                 {projects && projects.map((item, index) => (
                     <Flex w={"100%"} position={"relative"} justify={"center"} mb={"180px"} key={index}>
                         
@@ -45,9 +46,7 @@ function Projects() {
                             background:`url(${item.image}) center/cover no-repeat`,
                         }} borderRadius={"4px"} onClick={()=> openLink(item.link)} transition={".3s"} _hover={{filter:'hue-rotate(60deg) grayscale(80%)', cursor: "pointer"}}></Box>
                       
-                        
                         <Box className={styles.box} id={`description${index}`} borderWidth={2.34} borderColor={"rgba(255, 255, 255, 0)"} position={"absolute"} borderRadius={"6px"} backgroundColor={"#353637"} p={3.5} h={"fit-content"} w={"75%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>
-                            
                             <Flex justify={"space-between"}>
                                 <Text color={"#c2b199"} className={styles.title} fontSize={'lg'} fontWeight={700} pb={1}>{item.name}</Text>
                                 <a href={item.githubLink} target="_blank" rel="noreferrer"><BiCode size={"21px"} color={"#c2b199"}/></a>
@@ -57,8 +56,6 @@ function Projects() {
                         </Box>
                     </Flex>
                 ))}
-                
-                
             </Container>
         </>
     )

@@ -33,7 +33,7 @@ function Projects() {
             <Container maxW={"3xl"} centerContent>
                 
 
-                {projects.map((item, index) => (
+                {projects && projects.map((item, index) => (
                     <Flex w={"100%"} position={"relative"} justify={"center"} mb={"180px"} key={index}>
                         
                         <Box

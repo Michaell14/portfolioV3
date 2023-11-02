@@ -21,7 +21,7 @@ function Navbar() {
                         whileHover={{scale: 1.1}}>
                         
                         <Link passHref href="/">
-                            <Image src="/me.jpg" width={"100px"} objectFit={"cover"} height={"95px"} borderRadius={"full"} borderWidth={"2px"} borderColor={"green"} _hover={{cursor: "pointer"}}/>
+                            <Image src="/me.jpg" width={"100px"} objectFit={"cover"} height={"95px"} borderRadius={"full"} borderWidth={"2px"} borderColor={"green"} _hover={{cursor: "pointer"}} alt="Picture of Michael"/>
                         </Link>
                     </motion.div>
                     

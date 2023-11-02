@@ -18,7 +18,7 @@ export default function bitcamp() {
             
 
                 <Text fontSize={"xl"} className={styles.description} mt={2}>
-                    Enter your own endless hotdog eating competition with "Eat the Hotdog," an innovative microcontroller game designed at University of Maryland's Bitcamp Hackathon 2023. 
+                    Enter your own endless hotdog eating competition with &quot;Eat the Hotdog&quot;, an innovative microcontroller game designed at University of Maryland&apos;s Bitcamp Hackathon 2023. 
                     In this hands-on experience, players immerse themselves in an interactive gaming experience, where a controller becomes the hotdog and the objective is to feed the hotdog to the hungry customer.
                 </Text>
 
@@ -28,7 +28,7 @@ export default function bitcamp() {
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Process</Text>
 
                 <Text fontSize={"xl"} className={styles.description} mt={2}>
-                The game utilizes an Arduino-based microcontroller attached to an accelerometer. Players maneuver the "virtual hotdog" on the screen by turning and tilting the physical controller. 
+                The game utilizes an Arduino-based microcontroller attached to an accelerometer. Players maneuver the &quot;virtual hotdog&quot; on the screen by turning and tilting the physical controller. 
                 The main objective is to skillfully rotate the controller to cook the hotdog perfectly before the hungry customer takes a bite.
                 <br/><br/>
                 
@@ -53,7 +53,7 @@ export default function bitcamp() {
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Conclusion</Text>
               
                 <Text fontSize={"xl"} className={styles.description} mt={2}>
-                In reflection, the experience of creating "Eat the Hotdog" and building this 3D printed controller taught me lessons in design and user experience.
+                In reflection, the experience of creating &quot;Eat the Hotdog&quot; and building this 3D printed controller taught me lessons in design and user experience.
                 Throughout the hours of designing, modeling, and printing stages, I learned the significance of attention to detail in crafting functional components. 
                 This project combined 3D printing technology in enhancing the gaming experience to make it more physically interactive.
                 Although we have completed the production of this project, I have learned how to combine game development with 3D design, which is a combination that I will continue to use in future projects.

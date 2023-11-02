@@ -8,7 +8,7 @@
             "githubLink": "https://github.com/Michaell14/woottonlife"
         },{
             "name": "Eat the Hotdog",
-            "description": "A Unity game developed at UMD's Bitcamp Hackathon using an arduino, acceleratometer, and the Unity game engine",
+            "description": "A Unity game developed at UMD's Bitcamp Hackathon using an Arduino, acceleratometer, and the Unity game engine",
             "image": "/bitcamp/green_test_playing.jpg",
             "link": "/projects/bitcamp",
             "githubLink": "https://github.com/Michaell14/Arduino-Controller-for-Hotdog-Unity-Game"

@@ -55,9 +55,9 @@ export default function musicbox() {
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Conclusion</Text>
               
                 <Text fontSize={"xl"} className={styles.description} mt={2}>
-                Through the process of building this RFID-based music player, I've learned skills that have significantly enriched my understanding of Raspberry Pi technology and more.
+                Through the process of building this RFID-based music player, I&apos;ve learned skills that have significantly enriched my understanding of Raspberry Pi technology and more.
                 <br/><br/>
-                <span style={{color: "#99c2b4"}}>Hardware-Software Integration:</span> I've gained a deep appreciation for the integration of hardware and software. Understanding how the RFID reader interacts with the Arduino/Raspberry Pi and how these devices communicate with Spotify's API was a fascinating learning curve. This has expanded my understanding of how different technologies can work together seamlessly.
+                <span style={{color: "#99c2b4"}}>Hardware-Software Integration:</span> I&apos;ve gained a deep appreciation for the integration of hardware and software. Understanding how the RFID reader interacts with the Arduino/Raspberry Pi and how these devices communicate with Spotify&apos;s API was a fascinating learning curve. This has expanded my understanding of how different technologies can work together seamlessly.
                 <br/><br/>
                 <span style={{color: "#99c2b4"}}>API Integration and Internet of Things (IoT):</span> I delved into the world of APIs and IoT by connecting the Arduino/Raspberry Pi to an external service like Spotify. This exposed me to the power and potential of integrating various devices and online services to create innovative applications.
                 <br/><br/>
@@ -75,10 +75,10 @@ export default function musicbox() {
                 </Box>
 
                 <ImageBox src={"/musicbox/michael_soldering.jpg"} 
-                    desc={"I am soldering the RFID scanner to the Raspberry Pi 4"}/>
+                    desc={"I am soldering the RFID reader to the Raspberry Pi 4"}/>
 
                 <ImageBox src={"/musicbox/accelerometer_soldered.jpg"}
-                    desc={"Close-up of soldering work on the RFID Reader"}
+                    desc={"Close-up of soldering work on the RFID reader"}
                     height={"440px"}/>
                 <br/>
                 <br/>

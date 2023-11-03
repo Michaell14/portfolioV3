@@ -60,11 +60,14 @@ export default function bitcamp() {
 
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Additional Photos</Text>
 
-                <ImageBox src={"/bitcamp/nick_painting.jpg"} 
-                    desc={"Nick painting nature on the collaborative painting board at Bitcamp 2023!"}/>
+                <ImageBox src={"/bitcamp/prototype.jpg"}
+                    desc={"Close up of prototype controller with Arduino, accelerometer, and 3D-printed controller"}/>
 
                 <ImageBox src={"/bitcamp/red_test_playing.jpg"}
                     desc={"Player loses when the hotdog does not align with the mouth"}/>
+
+                <ImageBox src={"/bitcamp/nick_painting.jpg"} 
+                    desc={"Nick painting nature on the collaborative painting board at Bitcamp 2023!"}/>
 
                 <ImageBox src={"/bitcamp/participants.jpg"}
                     desc={"High view of all the participants at Bitcamp 2023"}/>

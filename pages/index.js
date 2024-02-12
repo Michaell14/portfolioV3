@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Box, Container, Text, Input, HStack, FormLabel, Icon, IconButton, useDisclosure } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
+import ColorText from '../components/ColorText';
 import {
   Drawer,
   DrawerBody,
@@ -87,18 +88,23 @@ export default function Home() {
             </motion.div>
             
 
-            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <span style={{color: "#c2b199"}}>full stack web development</span> and <span style={{color: "#c2b199"}}>artifical intelligence</span>.</Text>
+            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <ColorText text="full stack web development"/> and <ColorText text="software development"/>.</Text>
             
               <Text fontSize={"xl"} className={styles.description} mt={4}>
                 I appreciate good manga/anime{' ('}
                 
                 <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>give me a rec!</span>
           
-                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <span style={{color: "#c2b199"}}>Daniel Caesar, Rocco, and Jeremy Zucker.</span>
+                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="Daniel Caesar, Rocco, and Jeremy Zucker."/>
               </Text>
 
             <Text fontSize={"xl"} className={styles.description} mt={4}>
-              Now, I have the opportunity to share my love for tech through my projects and organizations like CodeDay and Kids For Code!</Text>
+              Now, I have the opportunity to share my love for tech through my projects and Penn club involvements like 
+              {" "}<ColorText text="Spark" link="https://pennspark.org/community/"/>, 
+              {" "}<ColorText text="REACH" link="https://www.instagram.com/upennreach/"/>, 
+              {" "}<ColorText text="PennApps" link="https://pennapps.com/"/>, and 
+              {" "}<ColorText text="PClassic!" link="https://www.pclassic.org/"/>
+              </Text>
           </Box>
           
           <Box className={styles.description} mt={5} mb={10}>

@@ -4,7 +4,7 @@ export default function ColorText( { text, link = null} ) {
     return (
         <>
             {link ? 
-                <span style={{color: "#99c2b4", textDecoration: "underline 2px"}} className="hideText">
+                <span style={{color: "#99c2b4"}} className="hideText">
                     <a href={link} rel={"noreferrer"} target={"_blank"}>
                         {text}
                     </a>

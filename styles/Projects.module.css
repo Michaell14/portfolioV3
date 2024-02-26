@@ -10,11 +10,3 @@
     font-family: 'JetBrains Mono', monospace;
 }
 
-.box:hover{
-    border-color: #c2b199;
-}
-
-.box{
-    transition: .45s;
-}
-

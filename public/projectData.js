@@ -3,7 +3,7 @@ const projectData = {
         {
             "name": "Bentofy",
             "description": "This is a one-stop hub of your own life that you can share with all of those arounds you in the form of the trending Bento UI style.",
-            "image": "thumbnails/bento_screenshot.png",
+            "image": "/thumbnails/bento_screenshot.png",
             "link": "https://bentofy.vercel.app/",
             "githubLink": "https://github.com/Michaell14/Bentofy/tree/main",
             "tags": ["In Development"]
@@ -24,21 +24,21 @@ const projectData = {
         },{
             "name": "PClassic.org", 
             "description": "Currently maintaining the UI/functionality of the Philadelphia Classic's (PClassic) website.",
-            "image": "thumbnails/pclassic.png", 
+            "image": "/thumbnails/pclassic.png", 
             "link": "https://www.pclassic.org/", 
             "githubLink": "https://github.com/pclassic",
             "tags": []
         },{
             "name": "Wootton Life", 
             "description": "A listing for students at Thomas S. Wootton HS to view upcoming clubs and activities. Created in an effort to promote school spirit and club interactivity.",
-            "image": "thumbnails/Wootton-Life.png", 
+            "image": "/thumbnails/Wootton-Life.png", 
             "link": "https://woottonlife.vercel.app/", 
             "githubLink": "https://github.com/Michaell14/woottonlife",
             "tags": []
         },{
             "name": "Encryptable", 
             "description": "A tool to help visualize popular text encryption ciphers. Created to make learning about ciphers easier for students to understand.",
-            "image": "thumbnails/encryptable_ss.png", 
+            "image": "/thumbnails/encryptable_ss.png", 
             "link": "https://encryption-visualizer.vercel.app/", 
             "githubLink": "https://github.com/Michaell14/encrypt-visualizer",
             "tags": []
@@ -46,7 +46,7 @@ const projectData = {
         {
             "name": "Codele", 
             "description": "A parody of Wordle, but instead, you guess a random programming language!", 
-            "image": "thumbnails/Codele.png", 
+            "image": "/thumbnails/Codele.png", 
             "link": "https://codele.vercel.app/", 
             "githubLink": "https://github.com/Michaell14/codele",
             "tags": []

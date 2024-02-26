@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from "../../styles/Projects.module.css";
 import {BiCode} from "react-icons/bi";
 import { projectData } from '../../public/projectData';
+import Image from 'next/image'
 
 function Projects() {
 
@@ -31,20 +32,21 @@ function Projects() {
             </Container>
             
             <Container maxW={"5xl"}>
-                <SimpleGrid minChildWidth={"400px"} gap={10}>
+                <SimpleGrid minChildWidth={"340px"} gap={10}>
                     {projectData && projectData.map((item, index) => (
                         <GridItem w='100%' key={index}>
                             <Flex w={"100%"} position={"relative"} justify={"center"} mb={"130px"} key={index}>
+                                <Image
+                                    src={item.image}
+                                    width={480}
+                                    height={282}
+                                    objectFit={"cover"}
+                                    alt="Picture of Design"
+                                    loading={"lazy"}
+                                    style={{borderRadius: "4px"}}
+                                    onClick={()=> openLink(item.link)}
+                                />
                                 
-                                <Box
-                                borderColor={"rgba(255, 255, 255, 0)"}
-                                borderRadius={"4px"}
-                                sx={{
-                                    width: "100%",
-                                    height: "280px",
-                                    cover: "fill",
-                                    background:`url(${item.image}) center/cover no-repeat`,
-                                }} onClick={()=> openLink(item.link)} _hover={{cursor: "pointer"}}></Box>
                             
                                 <Box id={`description${index}`} position={"absolute"} borderRadius={"6px"} backgroundColor={"#353637"} p={3} h={"fit-content"} w={"78%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>
                                     <Flex justify={"space-between"}>

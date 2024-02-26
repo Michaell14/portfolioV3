@@ -29,7 +29,7 @@ function Experience() {
                         <Box ml={5}>
                             <Text className={styles.title}><span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://pennapps.com/" rel={"noreferrer"} target={"_blank"}>PennApps</a></span> - Logistics Manager</Text>
                             <Text className={styles.description} fontSize={"15px"} mt={1.5}> 
-                            Organize the logistics of UPenn's premier hackathon by coordinating venue logistics, sponsorships, accommodations, and resource allocation to ensure a smooth event.
+                            Organize the logistics of UPenn&apos;s premier hackathon by coordinating venue logistics, sponsorships, accommodations, and resource allocation to ensure a smooth event.
                             </Text>
                         </Box>
                     </Box>
@@ -90,7 +90,7 @@ function Experience() {
                         <Box ml={5}>
                             <Text className={styles.title}><span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://www.pclassic.org/organizers" rel={"noreferrer"} target={"_blank"}>PClassic</a></span> - Organizer</Text>
                             <Text className={styles.description} mt={1.5}>
-                                Helped organize Philadelphia's largest high school competitive programming competition by designing programming problems,
+                                Helped organize Philadelphia&apos;s largest high school competitive programming competition by designing programming problems,
                                 locating sponsorships, and maintaining the pclassic.org website.
                             </Text>
                         </Box>
@@ -104,7 +104,7 @@ function Experience() {
                             <Text className={styles.title}><span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://kids4code.org/" rel={"noreferrer"} target={"_blank"}>Kids For Code</a></span> - President</Text>
                             <Text className={styles.description} mt={1.5}>
                                 Organized a team of 30+ tutors. Taught 3000+ children around the world the fundamentals of programming in Python, Java, Web Dev, and C++.
-                            "Best Free Education Resource 2021" by Mom Blog Society</Text>
+                                &quot;Best Free Education Resource 2021&quot; by Mom Blog Society</Text>
                         </Box>
                     </Box>
                 </Flex>

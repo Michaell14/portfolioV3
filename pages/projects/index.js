@@ -43,7 +43,7 @@ function Projects() {
                                     objectFit={"cover"}
                                     alt="Picture of Design"
                                     loading={"lazy"}
-                                    style={{borderRadius: "4px"}}
+                                    style={{borderRadius: "4px", cursor: "pointer"}}
                                     onClick={()=> openLink(item.link)}
                                 />
                                 

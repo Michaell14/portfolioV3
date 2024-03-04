@@ -13,14 +13,14 @@ const projectData = {
             "image": "/bitcamp/prototype.jpg",
             "link": "/projects/bitcamp",
             "githubLink": "https://github.com/Michaell14/Arduino-Controller-for-Hotdog-Unity-Game",
-            "tags": ["Hardware", "Hackathon"]
+            "tags": ["Article", "Hardware", "Hackathon"]
         },{
             "name": "Spotify Music Box",
             "description": "A Music box developed with the Spotify API",
             "image": "/musicbox/final_setup.jpg",
             "link": "/projects/musicbox",
             "githubLink": "",
-            "tags": ["Hardware"]
+            "tags": ["Article", "Hardware"]
         },{
             "name": "PClassic.org", 
             "description": "Currently maintaining the UI/functionality of the Philadelphia Classic's (PClassic) website.",
@@ -28,6 +28,13 @@ const projectData = {
             "link": "https://www.pclassic.org/", 
             "githubLink": "https://github.com/pclassic",
             "tags": []
+        },{
+            "name": "Unbe-leaf-able AI", 
+            "description": "Developed a program using Python, PyTorch, and Leafsnap Plant data to evaluate the accuracy of two machine learning models in identifying 185 species of leaves",
+            "image": "/thumbnails/unbeleafable.png", 
+            "link": "/projects/unbeleafable", 
+            "githubLink": "https://docs.google.com/presentation/d/1B_lBIkfkwzQYYXZVgo_IbSufFFa0JNr1PCqukg4qOpE/edit?usp=sharing",
+            "tags": ["Article", "Artificial Intelligence"]
         },{
             "name": "Wootton Life", 
             "description": "A listing for students at Thomas S. Wootton HS to view upcoming clubs and activities. Created in an effort to promote school spirit and club interactivity.",

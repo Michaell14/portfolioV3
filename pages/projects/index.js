@@ -46,7 +46,6 @@ function Projects() {
                                     style={{borderRadius: "4px", cursor: "pointer"}}
                                     onClick={()=> openLink(item.link)}
                                 />
-                                
                             
                                 <Box id={`description${index}`} position={"absolute"} borderRadius={"6px"} backgroundColor={"#353637"} p={3} h={"fit-content"} w={"78%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>
                                     <Flex justify={"space-between"}>
@@ -58,7 +57,9 @@ function Projects() {
                                     <HStack mt={1.5}>
                                         {item.tags?.map((tag, index2) => (
                                             <Tag key={index2} size={"sm"} color={"black"} className={styles.description} 
-                                            bgColor={tag === "In Development" ? "#7bb09e" : "#C198A6"} variant='solid'>
+                                            bgColor={tag === "In Development" ? "#7bb09e" :
+                                            tag === "Artificial Intelligence" ? "#A6C198" : 
+                                            tag === "Article" ? "#C198A6" : "#98A6C1"} variant='solid'>
                                                 {tag}
                                             </Tag>
                                         ))}

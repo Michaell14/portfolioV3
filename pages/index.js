@@ -86,7 +86,7 @@ export default function Home() {
             </motion.div>
             
 
-            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <ColorText text="full stack web development"/> and <ColorText text="software development"/>.</Text>
+            <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <ColorText text="software development"/> and <ColorText text="full stack development"/>.</Text>
             
               <Text fontSize={"xl"} className={styles.description} mt={4}>
                 I appreciate good manga/anime{' ('}

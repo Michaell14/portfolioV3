@@ -23,7 +23,7 @@ function Experience() {
             </Container>
 
             <Container maxW={"3xl"}>
-                <Flex gap={5} mt={"60px"}>
+                <Flex gap={5}>
                     <Text className={styles.date} fontSize={"sm"}>May 2024 - <br />Present</Text>
                     <Box className={styles.line} position={"relative"}>
                         <Box ml={5}>

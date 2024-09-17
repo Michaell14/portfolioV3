@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import { ChakraProvider, extendTheme  } from '@chakra-ui/react'
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import { Analytics } from '@vercel/analytics/react';
 
 const theme = extendTheme({

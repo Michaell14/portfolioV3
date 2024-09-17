@@ -41,7 +41,7 @@ function Experience() {
                         <Box ml={5}>
                             <Text className={styles.title}><span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://ilotusland.com/en/" rel={"noreferrer"} target={"_blank"}>iLotusLand</a></span> - Full Stack Developer Intern</Text>
                             <Text className={styles.description} fontSize={"15px"} mt={1.5}>
-                                Developed and optimized iLotusLand's demo website using Next.js, Ant Design, Node.js, and Supabase, reducing code redundancy with Tailwind CSS and improving performance and translations through better version control.
+                                Developed and optimized iLotusLand&apos;s demo website using Next.js, Ant Design, Node.js, and Supabase, reducing code redundancy with Tailwind CSS and improving performance and translations through better version control.
                             </Text>
                         </Box>
                     </Box>

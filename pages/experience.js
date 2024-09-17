@@ -23,7 +23,31 @@ function Experience() {
             </Container>
 
             <Container maxW={"3xl"}>
-                <Flex gap={5}>
+                <Flex gap={5} mt={"60px"}>
+                    <Text className={styles.date} fontSize={"sm"}>May 2024 - <br />Present</Text>
+                    <Box className={styles.line} position={"relative"}>
+                        <Box ml={5}>
+                            <Text className={styles.title}><span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://wzbiosciences.vercel.app/" rel={"noreferrer"} target={"_blank"}>WZ Biosciences</a></span> - Full Stack Developer</Text>
+                            <Text className={styles.description} fontSize={"15px"} mt={1.5}>
+                                Redesigned and rebuilt a responsive website with Next.js and Tailwind CSS as a solo developer, reducing page load time by 50%, optimizing SEO with SSR and SSG, and handling 1,000+ daily API requests with 99.9% uptime using Node.js.
+                            </Text>
+                        </Box>
+                    </Box>
+                </Flex>
+
+                <Flex gap={5} mt={"60px"}>
+                    <Text className={styles.date} fontSize={"sm"}>June 2024 - <br />August 2024</Text>
+                    <Box className={styles.line} position={"relative"}>
+                        <Box ml={5}>
+                            <Text className={styles.title}><span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://ilotusland.com/en/" rel={"noreferrer"} target={"_blank"}>iLotusLand</a></span> - Full Stack Developer Intern</Text>
+                            <Text className={styles.description} fontSize={"15px"} mt={1.5}>
+                                Developed and optimized iLotusLand's demo website using Next.js, Ant Design, Node.js, and Supabase, reducing code redundancy with Tailwind CSS and improving performance and translations through better version control.
+                            </Text>
+                        </Box>
+                    </Box>
+                </Flex>
+
+                <Flex gap={5} mt={"60px"}>
                     <Text className={styles.date} fontSize={"sm"}>Feb. 2024 - <br />Present</Text>
                     <Box className={styles.line} position={"relative"}>
                         <Box ml={5}>
@@ -54,7 +78,7 @@ function Experience() {
                         <Box ml={5}>
                             <Text className={styles.title}>Verizon - SWE Intern</Text>
                             <Text className={styles.description} fontSize={"15px"} mt={1.5}>
-                            During my internship at Verizon, I collaborated with a skilled team to integrate APIs, while gaining hands-on experience with the software development lifecycle, team dynamics, and project workflows in a large-scale tech environment.
+                                During my internship at Verizon, I collaborated with a skilled team to integrate APIs, while gaining hands-on experience with the software development lifecycle, team dynamics, and project workflows in a large-scale tech environment.
                             </Text>
                         </Box>
                     </Box>

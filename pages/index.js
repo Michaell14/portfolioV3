@@ -89,11 +89,11 @@ export default function Home() {
             <Text fontSize={"xl"} className={styles.description} mt={2}>I&#39;m a student attending the University of Pennsylvania who currently has a focus on <ColorText text="software development"/> and <ColorText text="full stack development"/>.</Text>
             
               <Text fontSize={"xl"} className={styles.description} mt={4}>
-                I appreciate good manga/anime{' ('}
+                I appreciate good manga/anime{" "}
                 
-                <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>give me a rec!</span>
+                <span style={{textDecoration: "underline 2px"}} className={"hideText"} onClick={onOpen}>{'('}give me a rec!{')'}</span>
           
-                {") "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="Daniel Caesar, Rocco, and Jeremy Zucker."/>
+                {" "}and I love discovering new <span style={{textDecoration: "underline 2px"}} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="Daniel Caesar, Rocco, and Jeremy Zucker."/>
               </Text>
 
             <Text fontSize={"xl"} className={styles.description} mt={4}>

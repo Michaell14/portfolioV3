@@ -22,7 +22,7 @@ export default function musicbox() {
                     The project involves a speaker, a Raspberry Pi, an RFID reader module, RFID cards/tags, and an internet-connected device with Spotify.
                 </Text>
 
-                <ImageBox src={"/musicbox/final_setup.jpg"} 
+                <ImageBox src={"/musicbox/final_setup.webp"} 
                     desc={"Final setup of Spotify Music box and speaker on my table"}/>
                       
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Components</Text>
@@ -48,7 +48,7 @@ export default function musicbox() {
                 </Text>
 
 
-                <ImageBox src={"/musicbox/rfid_values.JPG"} 
+                <ImageBox src={"/musicbox/rfid_values.webp"} 
                     desc={"RFID values are associated with their spotify track id"}/>
                
 
@@ -74,10 +74,10 @@ export default function musicbox() {
                     <Text className={styles.description} mt={2}>Shows how the music changes when a different album card is tapped</Text>
                 </Box>
 
-                <ImageBox src={"/musicbox/michael_soldering.jpg"} 
+                <ImageBox src={"/musicbox/michael_soldering.webp"} 
                     desc={"I am soldering the RFID reader to the Raspberry Pi 4"}/>
 
-                <ImageBox src={"/musicbox/accelerometer_soldered.jpg"}
+                <ImageBox src={"/musicbox/accelerometer_soldered.webp"}
                     desc={"Close-up of soldering work on the RFID reader"}
                     height={"440px"}/>
                 <br/>

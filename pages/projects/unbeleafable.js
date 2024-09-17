@@ -26,7 +26,7 @@ export default function Unbeleafable() {
 
 
                 <Box mt={10}>
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRblQR59jj5sWuERpCp2QdSZB2HaJ6ouDOL9GNO8jBRs-A2mLR2KnCnED-in7fEVn8TnTZ_lzgEuJPf/embed?start=true&loop=true&delayms=3000" width="100%" height="448.5" allowFullScreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <iframe src="https://docs.google.com/presentation/d/1sMGBQwiJpPhZaOwwzJkWq05K4BOoY7-PnwxYKLdlhFg/embed?start=false&loop=false&delayms=5000" width="100%" height="448.5" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </Box>
                 
                       
@@ -49,10 +49,10 @@ export default function Unbeleafable() {
 
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Additional Photos</Text>
                 
-                <ImageBox src={"/unbeleafable/test_predictions.png"} 
+                <ImageBox src={"/unbeleafable/test_predictions.webp"} 
                     desc={"Grid of predictions done by the VGG11 Deep Convolutional model for image recognition"}/>
 
-                <ImageBox src={"/unbeleafable/definitions.png"} 
+                <ImageBox src={"/unbeleafable/definitions.webp"} 
                     desc={"List of definitions for AI model"}/>
 
                 <br/>

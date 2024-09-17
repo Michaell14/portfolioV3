@@ -21,7 +21,7 @@ export default function bitcamp() {
                     In this hands-on experience, players immerse themselves in an interactive gaming experience, where a controller becomes the hotdog and the objective is to feed the hotdog to the hungry customer.
                 </Text>
 
-                <ImageBox src={"/bitcamp/circuit_model.jpg"} 
+                <ImageBox src={"/bitcamp/circuit_model.webp"} 
                     desc={"Wire diagram of Arduino and accelerometer circuit"}/>
                       
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Process</Text>
@@ -45,7 +45,7 @@ export default function bitcamp() {
                 players to easily grip the controller while ensuring a strong structure that would not break.
                 </Text>
 
-                <ImageBox src={"/bitcamp/accelerometer.jpg"} 
+                <ImageBox src={"/bitcamp/accelerometer.webp"} 
                     desc={"Accelerometer shows x, y, and z angles based on real life orientation"}/>
                
 
@@ -60,16 +60,16 @@ export default function bitcamp() {
 
                 <Text className={"subjectTitle"} color={"#c2b199"} fontSize={"3xl"} mt={10}>Additional Photos</Text>
 
-                <ImageBox src={"/bitcamp/prototype.jpg"}
+                <ImageBox src={"/bitcamp/prototype.webp"}
                     desc={"Close up of prototype controller with Arduino, accelerometer, and 3D-printed controller"}/>
 
-                <ImageBox src={"/bitcamp/red_test_playing.jpg"}
+                <ImageBox src={"/bitcamp/red_test_playing.webp"}
                     desc={"Player loses when the hotdog does not align with the mouth"}/>
 
-                <ImageBox src={"/bitcamp/nick_painting.jpg"} 
+                <ImageBox src={"/bitcamp/nick_painting.webp"} 
                     desc={"Nick painting nature on the collaborative painting board at Bitcamp 2023!"}/>
 
-                <ImageBox src={"/bitcamp/participants.jpg"}
+                <ImageBox src={"/bitcamp/participants.webp"}
                     desc={"High view of all the participants at Bitcamp 2023"}/>
 
                 <br/>

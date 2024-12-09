@@ -4,3 +4,17 @@
     font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
 }
+
+.stickyContainer {
+    position: sticky;
+    height: 100dvh;
+    top: 10vh;
+}
+
+
+@media (max-width: 1200px) {
+    .stickyContainer {
+        position: static;
+        height: 100%;
+    }
+}

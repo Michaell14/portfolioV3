@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap');
 
-.line{
-    border-left: 4px solid #88806b;
-    min-height: min-content;
-    height: fit-content;
-    padding-bottom: 16px;
-    border-radius: 1.7px;
-}
-
 .description, .title{
     font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
@@ -26,12 +18,4 @@
     transition: .3s;
     min-width: 93px;
     font-size: 12.9px;
-}
-
-.date:hover{
-    color: #c2b199
-}
-
-.title{
-    color: #c2b199
 }

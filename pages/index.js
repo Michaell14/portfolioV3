@@ -87,7 +87,7 @@ export default function Home() {
 
                 <Text fontSize={"lg"} className={styles.description} mt={2}>
                   I&#39;m a student attending the University of Pennsylvania with a focus on <ColorText text="software development" /> and <ColorText text="full stack development" />.
-                  My work centers around creating engaging user experiences that are driven by design and focused on functionality.
+                  {/* My work centers around creating engaging user experiences that are driven by design and focused on functionality. */}
                 </Text>
 
                 <Text fontSize={"lg"} className={styles.description} mt={4}>
@@ -113,7 +113,7 @@ export default function Home() {
                   return (
                     <div key = {index}>
                       {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
-                        <Image src={file.default["src"]} boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                        <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
                       ) : (
                         <video controls className="media-video">
                           <source src={file} type={`video/${fileExtension}`} />

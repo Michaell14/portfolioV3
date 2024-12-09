@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Container, Text, Flex, SimpleGrid, HStack, GridItem, Tag } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { Box, Text, Flex, SimpleGrid, HStack, GridItem, Tag } from '@chakra-ui/react';
 import styles from "../../styles/Projects.module.css";
 import { BiCode } from "react-icons/bi";
 import { projectData } from '../../lib/projectData';
@@ -18,7 +17,7 @@ function Projects() {
                 <Text className={"subjectTitle"} fontSize={"4xl"}>#Projects</Text>
             </Box>
 
-            <SimpleGrid minChildWidth={"370px"} gap={10} width={"100%"}>
+            <SimpleGrid minChildWidth={"370px"} gap={10}>
                 {projectData && projectData.map((item, index) => (
                     <GridItem w='100%' key={index}>
                         <Flex w={"100%"} position={"relative"} justify={"center"} mb={"130px"} key={index}>

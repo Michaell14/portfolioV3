@@ -1,9 +1,7 @@
 import React from 'react'
-import { Box, Container, Text, Flex } from '@chakra-ui/react';
+import { Box, Text, Flex } from '@chakra-ui/react';
 import styles from "../styles/Experience.module.css";
-import Head from "next/head";
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
 import { experiences, community } from '../lib/experienceData';
 
 

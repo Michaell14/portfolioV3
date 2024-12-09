@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Text } from '@chakra-ui/react';
+import { Container, Text } from '@chakra-ui/react';
 import Head from "next/head";
 import styles from "../../styles/Projects.module.css";
 import ImageBox from '../../components/ImageBox';

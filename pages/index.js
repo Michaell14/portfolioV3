@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Box, Container, Text, Center, Input, HStack, FormLabel, Icon, IconButton, useDisclosure, SimpleGrid, Image } from '@chakra-ui/react';
-import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import ColorText from '../components/ColorText';
 import Experience from './experience';

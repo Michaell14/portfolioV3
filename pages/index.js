@@ -81,7 +81,7 @@ export default function Home() {
           {/* <SimpleGrid minChildWidth={"600px"} columns={2} gap={0} position={"relative"}> */}
           <Container maxW={"2xl"} mt={"12vh"}>
             <Box >
-              <Text fontSize={"6xl"} className="title" id="nameTitle" color={"#c2b199"}>
+              <Text fontSize={{base: "5xl", md: "6xl"}} className="title" id="nameTitle" color={"#c2b199"}>
                 Hey, I&#39;m Michael Li
               </Text>
               <Box>

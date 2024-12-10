@@ -46,7 +46,7 @@ export default function Home() {
   const mediaFiles = mediaContext.keys().map((file) => mediaContext(file));
 
   return (
-    <>
+    <html lang={"en"}>
       <Head>
         <title>Michael Li</title>
         <link rel="icon" href="/favicon.ico"></link>
@@ -123,17 +123,17 @@ export default function Home() {
                       //     </video>
                       //   )}
                       // </div>
-                      <Image key={index} src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                      <Image key={index} alt={"Image of Michael"} src={file.default["src"]} boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
                     );
                   })}
                 </Box>
               </Box>
 
               <Box mt={4}>
-                <a href="https://github.com/Michaell14" target="_blank" rel="noreferrer"><Icon as={AiFillGithub} boxSize={7} /></a>
-                <a href="https://www.instagram.com/michaells19/" target="_blank" rel="noreferrer"><Icon as={AiOutlineInstagram} boxSize={7} mx={3} /></a>
-                <a href="mailto:limichael909@gmail.com"><Icon as={AiOutlineMail} boxSize={7} /></a>
-                <a href="https://github.com/Michaell14/portfolioV3" target="_blank" rel="noreferrer"><Icon as={BiCode} boxSize={7} ml={3} /></a>
+                <a href="https://github.com/Michaell14" target="_blank" rel="noreferrer" aria-label={"Link to Github"}><Icon as={AiFillGithub} boxSize={7} /></a>
+                <a href="https://www.instagram.com/michaells19/" target="_blank" rel="noreferrer" aria-label={"Link to Instagram"}><Icon as={AiOutlineInstagram} boxSize={7} mx={3} /></a>
+                <a href="mailto:limichael909@gmail.com"><Icon as={AiOutlineMail} boxSize={7} aria-label={"Link to Email"}/></a>
+                <a href="https://github.com/Michaell14/portfolioV3" target="_blank" rel="noreferrer" aria-label={"Link to Portfolio Code in Github"}><Icon as={BiCode} boxSize={7} ml={3} /></a>
               </Box>
             </Box>
           </Container>
@@ -150,6 +150,6 @@ export default function Home() {
         </Box>
       </Center >
       <Box h={40}></Box>
-    </>
+    </html>
   )
 }

@@ -27,6 +27,7 @@ function Projects() {
                                 style={{ borderRadius: "4px", cursor: "pointer" }}
                                 onClick={() => openLink(item.link)}
                                 quality={100}
+                                aria-label={"Link to Project"}
                             />
 
                             <Box id={`description${index}`} position={"absolute"} borderRadius={"6px"} backgroundColor={"#353637"} p={3} h={"fit-content"} w={"78%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>

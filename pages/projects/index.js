@@ -13,13 +13,9 @@ function Projects() {
 
     return (
         <>
-            <Box mb={"1.5vh"}>
-                <Text className={"subjectTitle"} fontSize={"4xl"}>#Projects</Text>
-            </Box>
-
             <SimpleGrid minChildWidth={"370px"} columns={2} gap={24}>
                 {projectData && projectData.map((item, index) => (
-                    <GridItem w='100%' key={index}>
+                    <GridItem w='100%' key={index} mt={6}>
                         <Flex w={"100%"} position={"relative"} justify={"center"} key={index}>
                             <Image
                                 src={item.image}

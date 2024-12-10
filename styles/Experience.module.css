@@ -6,6 +6,14 @@
     font-weight: 600;
 }
 
+/* .description{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 400px;
+} */
+
+
 .number{
     font-family: 'IM Fell Great Primer', serif;
     font-weight: 700;

@@ -61,7 +61,6 @@ export default function Home() {
           <DrawerCloseButton color={"white"} />
           <DrawerHeader borderBottomWidth='1px' borderColor={"#c2b199"} bgColor={"#88806b"} color={'#fffbf2'} className={"font"}>Send me a Rec!</DrawerHeader>
           <DrawerBody bgColor={"#88806b"}>
-
             <form ref={form} onSubmit={sendEmail} className="font">
               <FormLabel color={"#fffbf2"}>Name</FormLabel>
               <Input type="text" name="user_name" defaultValue={"anonymous"} color={'#fffbf2'} borderColor={"#c2b199"} focusBorderColor='#c2bf99' />
@@ -78,13 +77,14 @@ export default function Home() {
       </Drawer>
 
       <Center>
-        <Box w={"100%"} maxW={"1800px"}>
-          <SimpleGrid columns={2} minChildWidth="xl" gap={0} position={"relative"}>
-            <Container maxW={"2xl"} mt={["5vh", "10vh"]} className={styles.stickyContainer}>
+        <Box w={"100%"} maxW={"1350px"}>
+          {/* <SimpleGrid minChildWidth={"600px"} columns={2} gap={0} position={"relative"}> */}
+          <Container maxW={"2xl"} mt={"12vh"}>
+            <Box >
+              <Text fontSize={"6xl"} className="title" id="nameTitle" color={"#c2b199"}>
+                Hey, I&#39;m Michael Li
+              </Text>
               <Box>
-                <Text fontSize={"5xl"} className="title" id="nameTitle" color={"#c2b199"}>
-                  Hey, I&#39;m Michael Li
-                </Text>
 
                 <Text className={styles.description} mt={2}>
                   I&#39;m a student attending the University of Pennsylvania majoring in <ColorText text="computer science" /> and minoring in <ColorText text="mathematics" />.
@@ -96,61 +96,60 @@ export default function Home() {
 
                   <span style={{ textDecoration: "underline 2px" }} className={"hideText"} onClick={onOpen}>{'('}give me a rec!{')'}</span>
 
-                  {" "}and I love discovering new <span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="The Weeknd, d4vd, and Dominic Fike."/>
+                  {" "}and I love discovering new <span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="The Weeknd, d4vd, and Dominic Fike." />
                 </Text>
-{/* 
-                <Text className={styles.description} mt={4}>
-                  Now, I have the opportunity to share my love for tech through my projects and Penn club involvements like
-                  {" "}<ColorText text="Spark" link="https://pennspark.org/community/" />,
-                  {" "}<ColorText text="REACH" link="https://www.instagram.com/upennreach/" />,
-                  {" "}<ColorText text="PennApps" link="https://pennapps.com/" />, and
-                  {" "}<ColorText text="PClassic!" link="https://www.pclassic.org/" />
-                </Text> */}
+
+                <Box lineHeight={4} py={2}>
+                  <Text className={styles.subdescription} mt={4}>
+                    📍 Rockville, MD → Philadelphia, PA
+                  </Text>
+                  <Text className={styles.subdescription} mt={4}>
+                    📚 BSE in Computer Science (w/ math)
+                  </Text>
+                  <Text className={styles.subdescription} mt={4}>
+                    ✈️ US·CA·MX·BE·FR·CN·KR·JP·VN·SG·TH
+                  </Text>
+                </Box>
+                <Box display={"inline-list-item"} overflowX={"scroll"} mt={5}>
+                  {mediaFiles.map((file, index) => {
+                    const fileExtension = file.default["src"].split(".").pop();
+                    return (
+                      // <div key = {index}>
+                      //   {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
+                      //     <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                      //   ) : (
+                      //     <video controls className="media-video">
+                      //       <source src={file} type={`video/${fileExtension}`} />
+                      //     </video>
+                      //   )}
+                      // </div>
+                      <Image key={index} src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                    );
+                  })}
+                </Box>
               </Box>
 
-              <Box display={"inline-list-item"} overflowX={"scroll"} mt={5}>
-                {mediaFiles.map((file, index) => {
-                  const fileExtension = file.default["src"].split(".").pop();
-                  return (
-                    // <div key = {index}>
-                    //   {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
-                    //     <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
-                    //   ) : (
-                    //     <video controls className="media-video">
-                    //       <source src={file} type={`video/${fileExtension}`} />
-                    //     </video>
-                    //   )}
-                    // </div>
-                    <Image key={index} src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
-                  );
-                })}
-              </Box>
-
-              <Box className={styles.description} mt={5} mb={10}>
+              <Box mt={4}>
                 <a href="https://github.com/Michaell14" target="_blank" rel="noreferrer"><Icon as={AiFillGithub} boxSize={7} /></a>
                 <a href="https://www.instagram.com/michaells19/" target="_blank" rel="noreferrer"><Icon as={AiOutlineInstagram} boxSize={7} mx={3} /></a>
                 <a href="mailto:limichael909@gmail.com"><Icon as={AiOutlineMail} boxSize={7} /></a>
                 <a href="https://github.com/Michaell14/portfolioV3" target="_blank" rel="noreferrer"><Icon as={BiCode} boxSize={7} ml={3} /></a>
               </Box>
-            </Container>
-            <Container maxW={"2xl"} mt={["6vh", "6vh", "10vh"]}>
-              <Flex mb={"1.5vh"}>
-                <Text className={"subjectTitle"} fontSize={"4xl"} mr={5} _hover={{ cursor: "pointer" }} color={"#c2b199"}>#Experience</Text>
-              </Flex>
-              <Experience />
+            </Box>
+          </Container>
+          <Container maxW={"2xl"} mt={"12vh"}>
+            <Text mt={"0"} className={"subjectTitle"} fontSize={"4xl"} color={"#c2b199"} id={"experience"}>#Experience</Text>
+            <Experience />
+          </Container>
+          {/* </SimpleGrid> */}
 
-            </Container>
-          </SimpleGrid>
-
-          <SimpleGrid columns={1} minChildWidth="xl" mt={["6vh", 10]}>
-            <Container maxW={"5xl"}>
-              <Projects />
-            </Container>
-          </SimpleGrid>
+          <Container maxW={"5xl"}>
+            <Text className={"subjectTitle"} fontSize={"4xl"} id={"projects"} mb={1.5}>#Projects</Text>
+            <Projects />
+          </Container>
         </Box>
-
       </Center >
-
+      <Box h={40}></Box>
     </>
   )
 }

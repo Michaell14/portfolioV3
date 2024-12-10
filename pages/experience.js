@@ -16,7 +16,7 @@ function Experience() {
                 <motion.div
                     whileHover={{ backgroundColor: "#3f3f46", color: "#a1a1aa", shadow: "2xl", cursor: "pointer" }}
                     duration={.15}
-                    style={{ padding: 10, borderRadius: 10, color: "#747578", marginTop: (index == 0) ? "0px" : "20px" }}
+                    style={{ padding: 10, borderRadius: 10, color: "#747578", marginTop: (index == 0) ? "0px" : "10px" }}
                     onClick={() => { handleClick(experience["url"]) }}
                     key={index}
                 >
@@ -36,7 +36,7 @@ function Experience() {
                 <Text className={"subjectTitle"} fontSize={"4xl"} color={"#c2b199"}>#Community</Text>
             </Box>
 
-            <Box mb={20}>
+            <Box pb={20}>
                 {community.map((experience, index) => (
                     <motion.div
                         whileHover={{ backgroundColor: "#3f3f46", color: "#a1a1aa", shadow: "2xl", cursor: "pointer" }}

@@ -8,15 +8,9 @@
 
 .title, .subjectTitle{
   font-family: 'IM Fell Great Primer', serif;
-  /* font-family: "IM Fell Double Pica", serif; */
   font-weight: 700;
-  font-style: italic;
-  /* color: #c2b199; */
-  transition: color .2s;
-}
-
-.subjectTitle:hover{
-  color: #c2b199
+  /* font-style: italic; */
+  color: #c2b199;
 }
 
 .hideText{

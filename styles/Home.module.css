@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;500;600;700;800&display=swap');
 
-.description{
+.description, .navTitle, .subdescription {
     font-family: 'JetBrains Mono', monospace;
+}
+
+.subdescription {
+    font-size: medium;
+}
+
+.description{
     font-weight: 600;
-    font-size: 17px;
+    font-size: large;
 }
 
 .stickyContainer {
@@ -12,10 +19,29 @@
     top: 10vh;
 }
 
+.icons {
+    margin-top: 10;
+    position: absolute;
+    bottom: 0;
+}
 
 @media (max-width: 1200px) {
     .stickyContainer {
         position: static;
         height: 100%;
     }
+    .icons {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 10vh;
+    }
+}
+
+.navTitle{
+    transition: .2s;
+}
+
+.navTitle:hover{
+    cursor: pointer;
+    color: #99c2b4
 }

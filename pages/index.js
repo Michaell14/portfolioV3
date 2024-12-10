@@ -46,7 +46,7 @@ export default function Home() {
   const mediaFiles = mediaContext.keys().map((file) => mediaContext(file));
 
   return (
-    <html lang={"en"}>
+    <>
       <Head>
         <title>Michael Li</title>
         <link rel="icon" href="/favicon.ico"></link>
@@ -150,6 +150,6 @@ export default function Home() {
         </Box>
       </Center >
       <Box h={40}></Box>
-    </html>
+    </>
   )
 }

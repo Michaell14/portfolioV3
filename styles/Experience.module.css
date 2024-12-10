@@ -13,6 +13,9 @@
     width: 400px;
 } */
 
+.description, .date {
+    color: #88898c;
+}
 
 .number{
     font-family: 'IM Fell Great Primer', serif;

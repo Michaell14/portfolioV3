@@ -24,13 +24,13 @@ function Projects() {
                                 objectFit={"cover"}
                                 alt="Picture of Design"
                                 loading={"lazy"}
-                                style={{ borderRadius: "4px", cursor: "pointer" }}
+                                style={{ borderRadius: "6px", cursor: "pointer" }}
                                 onClick={() => openLink(item.link)}
                                 quality={100}
                                 aria-label={"Link to Project"}
                             />
 
-                            <Box id={`description${index}`} position={"absolute"} borderRadius={"6px"} backgroundColor={"#353637"} p={3} h={"fit-content"} w={"78%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>
+                            <Box id={`description${index}`} position={"absolute"} borderRadius={10} backgroundColor={"#353637"} p={3.5} h={"fit-content"} w={"78%"} mx={"auto"} bottom={0} transform={"translateY(60%)"}>
                                 <Flex justify={"space-between"}>
                                     <Text color={"#c2b199"} className={styles.title} fontWeight={700}>{item.name}</Text>
                                     <a href={item.githubLink} target="_blank" rel="noreferrer"><BiCode size={"21px"} color={"#c2b199"} /></a>

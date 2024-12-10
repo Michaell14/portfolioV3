@@ -3,11 +3,12 @@
 .description{
     font-family: 'JetBrains Mono', monospace;
     font-weight: 600;
+    font-size: 17px;
 }
 
 .stickyContainer {
     position: sticky;
-    height: 100dvh;
+    height: 80vh;
     top: 10vh;
 }
 

@@ -12,10 +12,6 @@ function Experience() {
 
     return (
         <>
-            <Box mb={"1.5vh"}>
-                <Text className={"subjectTitle"} fontSize={"4xl"}>#Experience</Text>
-            </Box>
-
             {experiences.map((experience, index) => (
                 <motion.div
                     whileHover={{ backgroundColor: "#3f3f46", color: "#a1a1aa", shadow: "2xl", cursor: "pointer" }}
@@ -37,10 +33,10 @@ function Experience() {
             ))}
 
             <Box mt={"6vh"} mb={"1.5vh"}>
-                <Text className={"subjectTitle"} fontSize={"4xl"}>#Community</Text>
+                <Text className={"subjectTitle"} fontSize={"4xl"} color={"#c2b199"}>#Community</Text>
             </Box>
 
-            <Box>
+            <Box mb={20}>
                 {community.map((experience, index) => (
                     <motion.div
                         whileHover={{ backgroundColor: "#3f3f46", color: "#a1a1aa", shadow: "2xl", cursor: "pointer" }}

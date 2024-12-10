@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Box, Container, Text, Center, Input, HStack, FormLabel, Icon, IconButton, useDisclosure, SimpleGrid, Image } from '@chakra-ui/react';
+import { Box, Container, Text, Center, Input, Flex, HStack, FormLabel, Icon, IconButton, useDisclosure, SimpleGrid, Image } from '@chakra-ui/react';
 import React, { useRef, useState } from "react";
 import ColorText from '../components/ColorText';
 import Experience from './experience';
 import Projects from './projects';
+import { motion } from 'framer-motion';
 import {
   Drawer,
   DrawerBody,
@@ -78,48 +79,49 @@ export default function Home() {
 
       <Center>
         <Box w={"100%"} maxW={"1800px"}>
-          <SimpleGrid columns={2} minChildWidth="xl" gap={0} position={"relative"} >
+          <SimpleGrid columns={2} minChildWidth="xl" gap={0} position={"relative"}>
             <Container maxW={"2xl"} mt={["5vh", "10vh"]} className={styles.stickyContainer}>
               <Box>
-                <Text fontSize={"5xl"} className="title" id="nameTitle">
+                <Text fontSize={"5xl"} className="title" id="nameTitle" color={"#c2b199"}>
                   Hey, I&#39;m Michael Li
                 </Text>
 
-                <Text fontSize={"lg"} className={styles.description} mt={2}>
-                  I&#39;m a student attending the University of Pennsylvania with a focus on <ColorText text="software development" /> and <ColorText text="full stack development" />.
+                <Text className={styles.description} mt={2}>
+                  I&#39;m a student attending the University of Pennsylvania majoring in <ColorText text="computer science" /> and minoring in <ColorText text="mathematics" />.
                   {/* My work centers around creating engaging user experiences that are driven by design and focused on functionality. */}
                 </Text>
 
-                <Text fontSize={"lg"} className={styles.description} mt={4}>
+                <Text className={styles.description} mt={4}>
                   I appreciate good manga/anime{" "}
 
                   <span style={{ textDecoration: "underline 2px" }} className={"hideText"} onClick={onOpen}>{'('}give me a rec!{')'}</span>
 
-                  {" "}and I love discovering new <span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="The Weeknd, d4vd, and Dominic Fike." />
+                  {" "}and I love discovering new <span style={{ textDecoration: "underline 2px" }} className={"hideText"}><a href="https://open.spotify.com/user/yvymj5dyeqm16d6ndcf6quctp" rel={"noreferrer"} target={"_blank"}>music</a></span>! Some  artists I currently have on repeat are: <ColorText text="The Weeknd, d4vd, and Dominic Fike."/>
                 </Text>
-
-                <Text fontSize={"lg"} className={styles.description} mt={4}>
+{/* 
+                <Text className={styles.description} mt={4}>
                   Now, I have the opportunity to share my love for tech through my projects and Penn club involvements like
                   {" "}<ColorText text="Spark" link="https://pennspark.org/community/" />,
                   {" "}<ColorText text="REACH" link="https://www.instagram.com/upennreach/" />,
                   {" "}<ColorText text="PennApps" link="https://pennapps.com/" />, and
                   {" "}<ColorText text="PClassic!" link="https://www.pclassic.org/" />
-                </Text>
+                </Text> */}
               </Box>
 
               <Box display={"inline-list-item"} overflowX={"scroll"} mt={5}>
                 {mediaFiles.map((file, index) => {
                   const fileExtension = file.default["src"].split(".").pop();
                   return (
-                    <div key = {index}>
-                      {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
-                        <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
-                      ) : (
-                        <video controls className="media-video">
-                          <source src={file} type={`video/${fileExtension}`} />
-                        </video>
-                      )}
-                    </div>
+                    // <div key = {index}>
+                    //   {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
+                    //     <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                    //   ) : (
+                    //     <video controls className="media-video">
+                    //       <source src={file} type={`video/${fileExtension}`} />
+                    //     </video>
+                    //   )}
+                    // </div>
+                    <Image key={index} src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
                   );
                 })}
               </Box>
@@ -132,11 +134,15 @@ export default function Home() {
               </Box>
             </Container>
             <Container maxW={"2xl"} mt={["6vh", "6vh", "10vh"]}>
+              <Flex mb={"1.5vh"}>
+                <Text className={"subjectTitle"} fontSize={"4xl"} mr={5} _hover={{ cursor: "pointer" }} color={"#c2b199"}>#Experience</Text>
+              </Flex>
               <Experience />
+
             </Container>
           </SimpleGrid>
 
-          <SimpleGrid columns = {1} minChildWidth="xl" mt={["6vh", 20]}>
+          <SimpleGrid columns={1} minChildWidth="xl" mt={["6vh", 10]}>
             <Container maxW={"5xl"}>
               <Projects />
             </Container>

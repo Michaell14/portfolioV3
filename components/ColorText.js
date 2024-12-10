@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ColorText( { text, link = null} ) {
+export default function ColorText( { text, link = null, color = "gold"} ) {
     return (
         <>
             {link ? 
@@ -10,7 +10,7 @@ export default function ColorText( { text, link = null} ) {
                     </a>
                 </span>
             :
-                <span style={{color: "#c2b199"}}>
+                <span style={{color: color == "gold" ? "#c2b199" : "#99c2b4"}}>
                     {text}
                 </span>
             }

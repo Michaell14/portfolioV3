@@ -17,10 +17,10 @@ function Projects() {
                 <Text className={"subjectTitle"} fontSize={"4xl"}>#Projects</Text>
             </Box>
 
-            <SimpleGrid minChildWidth={"370px"} gap={10}>
+            <SimpleGrid minChildWidth={"370px"} columns={2} gap={24}>
                 {projectData && projectData.map((item, index) => (
                     <GridItem w='100%' key={index}>
-                        <Flex w={"100%"} position={"relative"} justify={"center"} mb={"130px"} key={index}>
+                        <Flex w={"100%"} position={"relative"} justify={"center"} key={index}>
                             <Image
                                 src={item.image}
                                 width={480}

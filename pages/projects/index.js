@@ -58,8 +58,8 @@ function Projects() {
             <SimpleGrid minChildWidth={"300px"} columns={2} gap={10}>
 
                 {projectData && projectData.slice(0, len).map((item, index) => (
-                    <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ amount: .3, once: true }} transition={{ duration: .6 }}>
-                        <GridItem w='100%' key={index} mt={6}>
+                    <motion.div key={index} initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ amount: .3, once: true }} transition={{ duration: .6 }}>
+                        <GridItem w='100%' mt={6}>
                             <VStack w={"100%"} position={"relative"} key={index}>
                                 <Image
                                     src={item.image}

@@ -35,7 +35,7 @@ export default function Home() {
       <Center>
         <Box w={"100%"} maxW={"1350px"}>
           <Container maxW={"2xl"} mt={"12vh"}>
-            <Box h = {"100vh"}>
+            <Box h={"100vh"}>
               <Text fontSize={{ base: "5xl", md: "6xl" }} className="title" id="nameTitle" color={"#c2b199"}>
                 Hey, I&#39;m Michael Li
               </Text>
@@ -50,17 +50,17 @@ export default function Home() {
               </Text>
 
               <Box lineHeight={4} py={2}>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .3 }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .4 }}>
                   <Text className={styles.subdescription} mt={4}>
                     📍 Rockville, MD → Philadelphia, PA
                   </Text>
                 </motion.div>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .3, delay: .2 }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .4, delay: .3 }}>
                   <Text className={styles.subdescription} mt={4}>
                     📚 BSE in Computer Science (w/ math)  @ UPenn
                   </Text>
                 </motion.div>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .3, delay: .4 }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .4, delay: .6 }}>
                   <Text className={styles.subdescription} mt={4}>
                     ✈️ US·CA·MX·BE·FR·CN·KR·JP·VN·SG·TH
                   </Text>
@@ -87,12 +87,14 @@ export default function Home() {
           </Container>
 
           <Container maxW={"1400px"}>
-            <Text className={"subjectTitle"} fontSize={"4xl"} id={"projects"} mb={1.5}>#Selected Projects</Text>
             <Projects />
           </Container>
         </Box>
       </Center >
-      <Box h={40}></Box>
+      <Box h={40} pos={"relative"} w={"100%"} alignContent={"flex-end"} textAlign={"center"}>
+        <Text className={styles.description} mb={14} fontSize={"sm"}>Made with ☕ by Michael.</Text>
+      </Box>
+
     </>
   )
 }

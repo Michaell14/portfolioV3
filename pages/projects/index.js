@@ -16,6 +16,7 @@ function Projects() {
 
     return (
         <>
+            <Text mt={20} className={"subjectTitle"} fontSize={"4xl"} id={"projects"} mb={1.5}>#Selected Projects</Text>
             <SimpleGrid minChildWidth={"370px"} columns={2} gap={10}>
                 {selectedData && selectedData.map((item, index) => (
                     <motion.div key={index} initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ amount: .4, once: true }} transition={{ duration: .6 }}>
@@ -54,7 +55,7 @@ function Projects() {
                     </motion.div>
                 ))}
             </SimpleGrid>
-            <Text className={"subjectTitle"} fontSize={"4xl"} id={"projects"} mb={1.5}>#Archived Projects</Text>
+            <Text mt={20} className={"subjectTitle"} fontSize={"4xl"} id={"projects"} mb={1.5}>#Archived Projects</Text>
             <SimpleGrid minChildWidth={"300px"} columns={2} gap={10}>
 
                 {projectData && projectData.slice(0, len).map((item, index) => (

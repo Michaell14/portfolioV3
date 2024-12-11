@@ -19,6 +19,9 @@ function Experience() {
                     style={{ padding: 10, borderRadius: 10, color: "#747578", marginTop: (index == 0) ? "0px" : "10px" }}
                     onClick={() => { handleClick(experience["url"]) }}
                     key={index}
+                    initial={{ opacity: .45 }}
+                    whileInView={{ opacity: 1, transition: { duration: .3 } }}
+                    viewport={{ amount: .9 }}
                 >
                     <Flex gap={5}>
                         <Text className={styles.date} fontSize={"sm"}>{experience["date_start"]} - <br />{experience["date_end"]}</Text>
@@ -43,6 +46,9 @@ function Experience() {
                         duration={.15}
                         style={{ padding: 10, borderRadius: 10, color: "#747578", marginTop: (index == 0) ? "0px" : "20px" }}
                         key={index}
+                        initial={{ opacity: .45 }}
+                        whileInView={{ opacity: 1, transition: { duration: .4 } }}
+                        viewport={{ amount: .9 }}
                     >
                         <Flex gap={5}>
                             <Text className={styles.date} fontSize={"sm"}>{experience["date_start"]} - <br />{experience["date_end"]}</Text>

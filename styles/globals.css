@@ -9,7 +9,7 @@
 .title, .subjectTitle{
   font-family: 'IM Fell Great Primer', serif;
   font-weight: 700;
-  /* font-style: italic; */
+  font-style: italic;
   color: #c2b199;
 }
 

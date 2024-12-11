@@ -20,6 +20,12 @@ import { AiOutlineInstagram, AiFillGithub, AiOutlineMail } from "react-icons/ai"
 import { BiCode } from "react-icons/bi"
 import toast, { Toaster } from 'react-hot-toast';
 
+const images = [
+  "1.jpeg",
+  "2.jpg",
+  "3.jpg"
+]
+
 export default function Home() {
   const form = useRef();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -111,19 +117,9 @@ export default function Home() {
                   </Text>
                 </Box>
                 <Box display={"inline-list-item"} overflowX={"scroll"} mt={5}>
-                  {mediaFiles.map((file, index) => {
-                    const fileExtension = file.default["src"].split(".").pop();
+                  {images.map((image, index) => {
                     return (
-                      // <div key = {index}>
-                      //   {["jpg", "jpeg", "JPG", "png", "gif", "webp"].includes(fileExtension) ? (
-                      //     <Image src={file.default["src"]} fetchPriority='high' boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
-                      //   ) : (
-                      //     <video controls className="media-video">
-                      //       <source src={file} type={`video/${fileExtension}`} />
-                      //     </video>
-                      //   )}
-                      // </div>
-                      <Image key={index} alt={"Image of Michael"} src={file.default["src"]} boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
+                      <Image key={index} alt={"Image of Michael"} src={`/photobook/${image}`} boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />
                     );
                   })}
                 </Box>

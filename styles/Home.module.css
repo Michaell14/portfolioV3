@@ -13,30 +13,6 @@
     font-size: large;
 }
 
-.stickyContainer {
-    position: sticky;
-    height: 80vh;
-    top: 10vh;
-}
-
-.icons {
-    margin-top: 10;
-    position: absolute;
-    bottom: 0;
-}
-
-@media (max-width: 1200px) {
-    .stickyContainer {
-        position: static;
-        height: 100%;
-    }
-    .icons {
-        position: static;
-        margin-top: 10px;
-        margin-bottom: 10vh;
-    }
-}
-
 .navTitle{
     transition: .2s;
 }

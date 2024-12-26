@@ -21,8 +21,6 @@ export default function Home() {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-
-
   return (
     <>
       <Head>
@@ -62,7 +60,7 @@ export default function Home() {
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .4, delay: .6 }}>
                   <Text className={styles.subdescription} mt={4}>
-                    ✈️ US·CA·MX·BE·FR·CN·KR·JP·VN·SG·TH
+                    ✈️ US·CA·MX·BE·UK·FR·CN·KR·JP·VN·SG·TH
                   </Text>
                 </motion.div>
 

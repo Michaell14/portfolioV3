@@ -30,6 +30,7 @@ function Projects() {
                                 style={{ borderRadius: "6px", cursor: "pointer" }}
                                 onClick={() => openLink(item.link)}
                                 quality={90}
+                                priority={true}
                                 aria-label={"Link to Project"}
                             />
 

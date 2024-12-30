@@ -64,7 +64,7 @@ export default function Home() {
                   </Text>
                 </motion.div>
 
-                <Box display={"inline-list-item"} overflowX={"scroll"} mt={5}>
+                <Box display={"inline-list-item"} overflowX={{base: "scroll", md: "hidden"}} style={{scrollbarWidth:"thin", scrollbarColor:"white black"}} mt={5}>
                   {images.map((image, index) => {
                     return (
                       <Image key={index} alt={"Image of Michael"} src={`/photobook/${image}`} boxSize="12em" objectFit={"cover"} borderRadius={10} boxShadow={"lg"} mr={5} className={styles.image} />

@@ -80,7 +80,7 @@ export default function Home() {
                 <a href="https://github.com/Michaell14/portfolioV3" target="_blank" rel="noreferrer" aria-label={"Link to Portfolio Code in Github"}><Icon as={BiCode} boxSize={7} ml={3} /></a>
               </Box>
             </Box>
-            <Text className={"subjectTitle"} fontSize={"4xl"} color={"#  "} id={"experience"} mb={"1.5vh"}>#Experience</Text>
+            <Text className={"subjectTitle"} fontSize={"4xl"} id={"experience"} mb={"1.5vh"}>#Experience</Text>
             <Experience />
           </Container>
 

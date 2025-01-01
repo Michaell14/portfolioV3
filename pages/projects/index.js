@@ -78,7 +78,7 @@ function Projects() {
                                 <Box id={`description${index}`} borderRadius={10} backgroundColor={"#353637"} p={3.5} h={"fit-content"}>
                                     <Flex justify={"space-between"}>
                                         <Text color={"#c2b199"} className={styles.title} fontWeight={700}>{item.name}</Text>
-                                        <a href={item.githubLink} target="_blank" rel="noreferrer"><BiCode size={"21px"} color={"#c2b199"} /></a>
+                                        <a href={item.githubLink} target="_blank" rel="noreferrer"><BiCode size={"21px"} color={"#A89977"} /></a>
                                     </Flex>
 
                                     <Text mt={.5} color={"whiteAlpha.800"} className={styles.description} fontSize={"xs"}>{item.description}</Text>

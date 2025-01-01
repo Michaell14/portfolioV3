@@ -10,7 +10,7 @@
   font-family: 'IM Fell Great Primer', serif;
   font-weight: 700;
   font-style: italic;
-  color: #c2b199;
+  color: #A89977;
 }
 
 .hideText{
@@ -18,7 +18,7 @@
 }
 
 .hideText:hover{
-  color: #99c2b4;
+  color: #79A99A;
   cursor: pointer;
   text-decoration: none;
 }

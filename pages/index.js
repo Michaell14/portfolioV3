@@ -34,7 +34,7 @@ export default function Home() {
         <Box w={"100%"} maxW={"1350px"}>
           <Container maxW={"2xl"} mt={"12vh"}>
             <Box h={"100vh"}>
-              <Text fontSize={{ base: "5xl", md: "6xl" }} className="title" id="nameTitle" color={"#c2b199"}>
+              <Text fontSize={{ base: "5xl", md: "6xl" }} className="title" id="nameTitle">
                 Hey, I&#39;m Michael Li
               </Text>
               <Text className={styles.description} mt={2}>

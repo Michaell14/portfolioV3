@@ -36,7 +36,7 @@ function Experience() {
             ))}
 
             <Box mt={"6vh"} mb={"1.5vh"}>
-                <Text className={"subjectTitle"} fontSize={"4xl"} color={"#c2b199"}>#Community</Text>
+                <Text className={"subjectTitle"} fontSize={"4xl"}>#Community</Text>
             </Box>
 
             <Box pb={20}>

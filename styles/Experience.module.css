@@ -6,15 +6,8 @@
     font-weight: 600;
 }
 
-/* .description{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 400px;
-} */
-
 .description, .date {
-    color: #88898c;
+    color: #9A9B9E;
 }
 
 .number{
